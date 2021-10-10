@@ -1,0 +1,26 @@
+{
+  "descriptionShort": "Indigo-dyed felt and leather tote bag.",
+  "body": "This is the pocket-lover’s tote! It includes four outside pockets in indigo-dyed felt. Fits a laptop or tablet in addition to all of the essentials.\n\nI dye each of these by hand with indigo. The felt is the highest density of industrial wool felt; it may pill slightly during the first week or so of wear, but simply remove pills with a lint remover (or your fingers) and this will soon subside. Indigo is a physical bond with wool and may fade slightly over time. Includes all brass hardware.\n\nFor cleaning, a lint roller is your best friend. You may spot clean with water and gentle detergent, but do not submerge in water.\n\nApproximate dimensions: 15 inches wide x 13 inches tall x 3 inches deep.",
+  "width": 13,
+  "length": 48,
+  "height": 36,
+  "price": 190,
+  "layout": "product",
+  "name": "AZ0067-015 Medium Felt Tote - Indigo",
+  "slug": "AZ0067-015-medium-felt-tote-indigo",
+  "currentListing": true,
+  "materials": [
+    "felt",
+    "leather"
+  ],
+  "displayName": "Medium Felt Tote / Indigo",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035865/AZ0067-015-02_h98ksb.jpg"
+  ],
+  "weight": 567,
+  "type": [
+    "tote"
+  ],
+  "id": "AZ0067-015",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1607035864/AZ0067-015-01_brcd8u.jpg"
+}

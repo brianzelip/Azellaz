@@ -1,0 +1,12 @@
+{
+  "types": [
+    "backpack",
+    "circular pouch",
+    "tote"
+  ],
+  "materials": [
+    "felt",
+    "leather",
+    "waxed canvas"
+  ]
+}

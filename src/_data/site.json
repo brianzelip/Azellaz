@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Azellaz",
+    "tagline": "Quality bags built from scratch in Baltimore",
+    "byline": "by Azellaz",
+    "titles": {
+      "about": "About Azellaz",
+      "contact": "Contact Azellaz",
+      "portfolio": "Azellaz Portfolio"
+    },
+    "descriptions": {
+      "about": "About Azellaz.com, including tips on caring for your bag made by Azellaz.",
+      "contact": "Get in touch with Azellaz.com.",
+      "portfolio": "Portfolio of Azellaz bags."
+    },
+    "images": {
+      "main": "https://res.cloudinary.com/azellaz/image/upload/v1633864706/meta/medium-tote-felt-clutch-iron-maroon-leather_h3lzij.jpg",
+      "about": "https://res.cloudinary.com/azellaz/image/upload/v1587577970/Azellaz-work-bench_kkthtr.jpg"
+    },
+    "imageAlt": {
+      "main": "Quality bags built from scratch in Baltimore by Azellaz",
+      "about": "Azellaz workspace"
+    }
+  },
+  "paths": {
+    "base_url": "https://www.azellaz.com/",
+    "base_url_no_slash": "https://www.azellaz.com",
+    "images_dir": "images/",
+    "product_images_dir": "images/products/",
+    "product_thumb_sm_images_dir": "images/products/thumbs-sm/",
+    "product_thumb_med_images_dir": "images/products/thumbs-med/"
+  },
+  "productImages": {
+    "thumb_medium_prefix": "thumb-med-",
+    "thumb_small_prefix": "thumb-sm-"
+  },
+  "cloudinary": {
+    "cloudinary": "https://res.cloudinary.com/azellaz/image/upload/q_auto:eco",
+    "trnsfrm_med": "/w_0.25",
+    "trnsfrm_thumb": "/w_100,h_100,c_limit"
+  },
+  "content": {
+    "in_stock": "This item is in stock and ready to ship. Items are individually dyed and may vary slightly from these images.",
+    "made_to_order": "Made to order, ships in 1-3 weeks. Items are individually dyed and may vary slightly from these images.",
+    "flash_holiday_order_by": "Order by Tuesday, December 12 to ship in time for Christmas.",
+    "holiday_flash_message": "All orders made Dec 9-18 will ship Dec 19, 2020.",
+    "html_test": "<a href='https://zelip.me'>LINK</a>"
+  },
+  "flashToggles": {
+    "holiday_flash_is_active": false
+  },
+  "externalLinks": {
+    "instagram": "https://www.instagram.com/azellaz/",
+    "github": "https://github.com/brianzelip/Azellaz.com",
+    "email": "support@azellaz.com"
+  },
+  "snipcart": {
+    "test_api_key": "NjQyNTJmYzUtZGY3Yy00MzE1LTk5ZGUtMmYwN2ZhZjYxYmQyNjM2MjQyNjk5MDU5MDI2MjE2",
+    "live_api_key": "NmJjMmI5YTQtNmNlYy00YzJmLWE0NjUtZDQ0YzE5NWQ3YmYzNjM2MjQyNjk5MDU5MDI2MjE2"
+  }
+}

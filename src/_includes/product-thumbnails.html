@@ -1,0 +1,22 @@
+<div class="py1 sm-py2 mxn1 flex align-items-end sm-align-items-start">
+  {%- comment -%} Include imgPrimary in thumbnails first {%- endcomment -%} {%
+  if product.imgPrimary != '' %}
+  <div class="col col-sevenths px1">
+    <img
+      class="border pointer thumb"
+      src="{{ site.cloudinary.cloudinary }}{{ site.cloudinary.trnsfrm_med }}{{ product.imgPrimary }}"
+      alt="{{ product.displayName }} {{ site.meta.byline }}"
+      title="{{ product.displayName }} {{ site.meta.byline }}"
+    />
+  </div>
+  {% endif %} {% for img in product.imgSecondarySet %}
+  <div class="col col-sevenths px1">
+    <img
+      class="border pointer thumb"
+      src="{{ site.cloudinary.cloudinary }}{{ site.cloudinary.trnsfrm_med }}{{ img }}"
+      alt="{{ product.displayName }} {{ site.meta.byline }}"
+      title="{{ product.displayName }} {{ site.meta.byline }}"
+    />
+  </div>
+  {% endfor %}
+</div>

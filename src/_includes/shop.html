@@ -1,0 +1,11 @@
+<section id="shop" class="sm-vh100 py3 md-py4">
+  <h1 class="hide">Shop</h1>
+  <div class="container">
+    {% if site.flashToggles.holiday_flash_is_active %}
+      {% include holiday-flash.html %}
+    {% endif %}
+    {% include shop-filter-buttons.html %}
+    {% include shop-grid.html %}
+    {% include fixed-logo.html %}
+  </div>
+</section>

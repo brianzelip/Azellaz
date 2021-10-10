@@ -1,0 +1,25 @@
+<div class="mx1 mb2 h6 sm-h4 flex justify-center filter-buttons-group filter-buttons x-btn-group" data-filter-group="type">
+
+  <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-type]">All Types</button>
+
+  {% for type in bagOptions.types %}
+    {% assign type_as_array = type | split: ' ' %}
+    {% assign type_first_word = type_as_array | first %}
+    {% assign words = type | split: ' ' %}
+    
+    <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-type~='{{ type_first_word }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+  {% endfor %}
+</div>
+
+<div class="mx1 mb2 h6 sm-h4 flex justify-center blue filter-buttons-group filter-buttons x-btn-group" data-filter-group="materials">
+  <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded is-active regular" data-filter="[data-materials]">All Materials</button>
+
+  {% for material in bagOptions.materials %}
+    {% assign material_as_array = material | split: ' ' %}
+    {% assign material_first_word = material_as_array | first %}
+    {% assign words = material | split: ' ' %}
+
+    <button type="button" class="btn btn-filter btn-outline border-dark-gray light-black not-rounded regular" data-filter="[data-materials~='{{ material_first_word }}']">{% for word in words %}{{ word | capitalize | prepend: ' ' }} {% endfor %}</button>
+    {%- comment -%} isotope data-filters only work with one-word strings, that's why the extracting-one-word-from-a-possible-multiword-category rigamorol {%- endcomment -%}
+  {% endfor %}
+</div>

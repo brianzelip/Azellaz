@@ -1,0 +1,6 @@
+<div class="iso-grid">
+  {% assign reversedProducts = currentProducts | reverse %}
+  {% for product in reversedProducts %}
+    {% include shop-grid-item.html %}
+  {% endfor %}
+</div>

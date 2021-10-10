@@ -1,0 +1,87 @@
+{% if site.flashToggles.holiday_flash_is_active %}
+<section class="container">
+  {% include holiday-flash.html %}
+</section>
+{% endif %}
+
+<div class="vh100 container mb1 md-mb0">
+
+  <div class="col col-12 md-col-7 p2">
+    <div class="sm-hide"><!-- have to double up this component because ie's lack of flexbox column support -->
+      {% include product-thumbnails.html %}
+    </div>
+
+    <div>
+      <img
+        id="large-image-view"
+        class="mbn1"
+        src="{{ site.cloudinary.cloudinary }}{{ product.imgPrimary }}" 
+        alt="{{ product.displayName }} {{ site.meta.byline }}"
+        title="{{ product.displayName }} {{ site.meta.byline }}"
+      />
+    </div>
+
+    <div class="sm-show"><!-- have to double up this component because ie's lack of flexbox column support -->
+      {% include product-thumbnails.html %}
+    </div>
+  </div>
+
+  <div class="col col-12 md-col-5 p2">
+    <h1 class="m0 h2 serif light-black">{{ product.displayName }}</h1>
+    <p class="h2 serif light-black">${{ product.price }}{% if product.type contains 'clutch'  %}+{% endif %}</p>
+
+    <div data-markdown="product-description">{{ content }}</div>
+
+    <div class="md-mt4">
+      <button
+        {% if product.stockOnHand == 0 %}disabled {% endif %}
+        class="buy-btn snipcart-add-item"
+        data-item-id="{{ product.id }}"
+        data-item-name="{{ product.displayName }}"
+        data-item-image="{{ site.cloudinary.cloudinary }}{{ site.trnsfrm_thumb}}{{ product.imgPrimary }}"
+        data-item-price="{{ product.price }}"
+        data-item-weight="{{ product.weight }}"
+        data-item-height="{{ product.height }}"
+        data-item-width="{{ product.width }}"
+        data-item-length="{{ product.length }}"
+        data-item-url="{{ site.paths.base_url_no_slash }}{{ page.url }}"
+        data-item-description="{{ product.descriptionShort }}"{% if product.slug contains 'clutch' %}
+        data-item-custom1-name="Strap options"
+        data-item-custom1-required="true"
+        data-item-custom1-options="No strap, $54|Wrist, $64[+10.00]|Crossbody, $74[+20.00]|Both straps, $84[+30.00]"{% endif %}>
+        {% if product.stockOnHand == 0 %} Sold Out{% else %} Add to Cart{% endif %}
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const largeImage = document.getElementById('large-image-view');
+  const thumbnails = document.querySelectorAll('.thumb');
+
+
+  // es6 way that is not being used
+  // Array
+  //   .from(thumbnails)
+  //   .forEach((thumbnail) => thumbnail.addEventListener('click', showLargeImage));
+
+  // es5 way because ie 11
+  []
+    .forEach
+    .call(thumbnails,function(thumbnail) {
+      thumbnail.addEventListener('click', showLargeImage, false)
+    });
+
+  function showLargeImage(e) {
+    largeImage.src = getLargerImgSrcFromThumbSrc(this.src);
+    largeImage.alt = this.alt;
+    largeImage.title = this.title;
+  }
+
+  function getLargerImgSrcFromThumbSrc(src) {
+    const thumbSubstr = /\/thumbs-med\/thumb-med-/;
+    return src.replace(thumbSubstr, '/');
+  }
+
+</script>

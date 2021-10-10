@@ -1,0 +1,90 @@
+<footer class="col col-12 bg-gray px2">
+  <div class="py3 md-py4">
+    <section
+      class="
+        container
+        flex flex-column
+        sm-flex-row sm-align-items-start sm-justify-between
+        light-black
+      "
+    >
+      <div class="flex flex-column center sm-left-align order1">
+        <p class="mb0 sm-mb1 sm-pbQuart h1 sm-h2 sm-border-bottom fw200">
+          Azellaz
+        </p>
+
+        <nav id="social" class="mt2 mb2 maxw-300px mx-auto sm-hide">
+          <ul class="list-reset mb0 flex flex-center justify-around">
+            <li class="">
+              <a href="{{ site.externalLinks.instagram }}" class="light-black">
+                <i class="fa fa-instagram fa-2x"></i>
+              </a>
+            </li>
+            <li class="">
+              <a
+                href="mailto:{{ site.externalLinks.email }}"
+                class="light-black"
+              >
+                <i class="fa fa-envelope-o fa-2x"></i>
+              </a>
+            </li>
+            <li class="">
+              <a href="{{ site.externalLinks.github }}" class="light-black">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="mb1 sm-mb0 h5 fw200">
+          Quality bags built from scratch in Baltimore
+        </p>
+        <!-- <p class="sm-mb0 h5 fw200">
+          Site powered and secured by
+          <a href="https://snipcart.com" class="light-black">Snipcart</a> and
+          <a href="https://netlify.com" class="light-black">Netlify</a>
+        </p> -->
+        <p class="mb0 h5 fw200">&copy; {{ 'now' | date: '%Y' }} Azellaz.com</p>
+      </div>
+
+      <nav id="contact" class="sm-show mb3 sm-order2 sm-mb0">
+        <p
+          class="m0 mb1 pbQuart h2 sm-border-bottom fw200 center sm-right-align"
+        >
+          <span class="h3">Contact us</span>
+        </p>
+        <ul
+          class="
+            list-reset
+            mb0
+            sm-flex sm-flex-center sm-justify-between
+            center
+            sm-right-align
+          "
+        >
+          <li class="mb1 sm-mb0">
+            <a
+              href="{{ site.externalLinks.instagram }}"
+              class="h5 fw200 light-black"
+              >Instagram</a
+            >
+          </li>
+          <li class="mb1 sm-mb0 sm-ml3">
+            <a
+              href="mailto:{{ site.externalLinks.email }}"
+              class="h5 fw200 light-black"
+              >Email</a
+            >
+          </li>
+          <li class="mb1 sm-mb0 sm-ml3">
+            <a
+              href="{{ site.externalLinks.github }}"
+              class="h5 fw200 light-black"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+</footer>

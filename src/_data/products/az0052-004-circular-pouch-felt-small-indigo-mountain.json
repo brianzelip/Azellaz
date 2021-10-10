@@ -1,0 +1,26 @@
+{
+  "descriptionShort": "Hand-dyed felt pouch.",
+  "body": "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. \n\nMade from industrial wool felt and dip-dyed with natural indigo. Nylon YKK zipper.\n\nDesigned, hand-dyed, and sewn by me in Baltimore.\n\nApproximate dimensions: 5.5 inches wide x 3.5 inches tall x 2.5 inches deep",
+  "width": "8",
+  "length": "16",
+  "height": "10",
+  "price": "25",
+  "name": "AZ0052-004 Circular pouch - felt - small - indigo mountain",
+  "slug": "AZ0052-004-circle-pouch-small-indigo-mountain",
+  "currentListing": true,
+  "materials": [
+    "felt"
+  ],
+  "displayName": "Small Felt Circle Pouch / Indigo Mountain",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496428/AZ0052-004-02_nwp199.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496429/AZ0052-004-03_zc5y2d.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496431/AZ0052-004-04_knrdgd.jpg"
+  ],
+  "weight": "57",
+  "type": [
+    "circular pouch"
+  ],
+  "id": "AZ0052-004",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587496428/AZ0052-004-01_cpd4mp.jpg"
+}

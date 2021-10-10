@@ -1,0 +1,1192 @@
+/*!
+
+  www.AZELLAZ.com style
+
+    by @bzelip
+
+    w/ special guests:
+      - [Basscss](http://basscss.com/)
+      - [iHover](http://gudh.github.io/ihover/dist/index.html)
+      - [Font Awesome](http://fontawesome.io/)
+
+    * * * * * * * * * * * * * * * * *
+    *                               *
+    *    She's crafty,              *
+    *    and she's just my type!    *
+    *                               *
+    * * * * * * * * * * * * * * * * *
+
+*/
+
+/*!
+ * 1/4 - Basscss
+ */
+@import '@bzelip/basscss7.1.1';
+
+/*!
+ * 2/4 - iHover
+ */
+@import './ihover.CUSTOM.css';
+
+/*!
+ * 3/4 - FontAwesome
+ */
+@import './font-awesome@4.7.0.CUSTOM.css';
+
+/*!
+ * 4/4 - Azellaz.theme
+ */
+
+:root {
+  --blue: rgb(82, 141, 191);
+  --yellow: rgb(255, 193, 7);
+  --state-info: var(--blue);
+  --state-warning: var(--yellow);
+  --color-info: #22425d; /*color(var(--state-info) lightness(25%));*/
+  --color-warning: #806000; /*color(var(--state-warning) lightness(25%));*/
+  --bg-color-info: #d4e3ef; /*color(var(--state-info) tint(75%));*/
+  --bg-color-warning: #fff0c1; /*color(var(--state-warning) tint(75%));*/
+  --border-color-info: #9faab3; /*color(var(--bg-color-info) shade(25%));*/
+  --border-color-warning: #bfb491; /*color(var(--bg-color-warning) shade(25%));*/
+
+  --navy: rgb(36, 56, 83);
+  --light-black: rgb(58, 58, 58);
+  --bagBlue: rgb(146, 190, 209);
+  --bagBlue2: rgb(80, 121, 140);
+  --bagBlue3: rgb(103, 151, 171);
+
+  --serif: Athelas, Georgia, serif;
+}
+
+/*!
+Box Sizing via http://tachyons.io/docs/layout/box-sizing/
+(figure is an Azellaz addition)
+*/
+
+html,
+body,
+div,
+article,
+section,
+main,
+footer,
+header,
+form,
+fieldset,
+figure,
+pre,
+code,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+textarea,
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+.border-box {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.vh100 {
+  min-height: 100vh;
+}
+@media (min-width: 40em) {
+  .sm-vh100 {
+    min-height: 100vh;
+  }
+}
+
+@media (max-height: 400px) {
+  .minh-400px {
+    min-height: 400px;
+  }
+}
+
+body,
+.h0,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+} /*mods*/
+
+.container {
+  max-width: 76em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fullScreenPic {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.background-center {
+  background-position: center;
+}
+
+.heroImg {
+  background-image: url(https://res.cloudinary.com/azellaz/image/upload/q_auto:eco/hero-at-97-percent-optimized_small-tote-indigo-shibori-white-maroon-leather-lookbook3.jpg);
+}
+
+.serif {
+  font-family: var(--serif);
+} /*mods*/
+
+.border-red {
+  border-color: #ff4136;
+} /*mods*/
+.border-blue {
+  border-color: #0074d9;
+} /*mods*/
+.border-black {
+  border-color: #000;
+} /*mods*/
+.hover-underline:hover {
+  text-decoration: underline;
+} /*mods*/
+.hover-no-underline:hover {
+  text-decoration: none;
+} /*mods*/
+
+.fw200 {
+  font-weight: 200;
+} /*mods*/
+.fw400 {
+  font-weight: 400;
+} /*mods*/
+.fw500 {
+  font-weight: 500;
+} /*mods*/
+
+.fixed-logo-show {
+  display: none !important;
+}
+@media (min-width: 84.375em) {
+  .fixed-logo-show {
+    display: block !important;
+  }
+} /* minimum width to show fixed shop logo; 84.375em = 1350px = .container size (76rem) + 75px(75px=logo hard coded width)*2 (account for left and right container gutters)*/
+
+.col-sevenths {
+  width: calc(100% / 7);
+}
+
+.height2r {
+  height: 2rem;
+}
+
+.px1 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+} /*mods*/
+
+.pb4 {
+  padding-bottom: 4rem;
+} /*mods*/
+
+.my2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+} /*mods*/
+
+.mt10 {
+  margin-top: 10rem;
+} /*mods*/
+.mb10 {
+  margin-bottom: 10rem;
+} /*mods*/
+.mtn8 {
+  margin-top: -8rem;
+} /*mods*/
+.mtn2 {
+  margin-top: -1rem;
+} /*mods*/
+.mtn3 {
+  margin-top: -2rem;
+} /*mods*/
+.mtn4 {
+  margin-top: -3rem;
+} /*mods*/
+.mtn5 {
+  margin-top: -4rem;
+} /*mods*/
+.mbn25 {
+  margin-bottom: -0.25rem;
+} /*mods*/
+.mbn1 {
+  margin-bottom: -0.5rem;
+} /*mods*/
+
+.mln2 {
+  margin-left: -1rem;
+}
+@media (min-width: 40em) {
+  .sm-mt0 {
+    margin-top: 0;
+  }
+  .sm-mt4 {
+    margin-top: 4rem;
+  }
+  .sm-mb4 {
+    margin-bottom: 4rem;
+  }
+} /*mods*/
+.mx1 {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+} /*mods*/
+
+.btn-blue {
+  color: #fff;
+  /* background-color: rgb(103, 151, 171); */
+  background-color: var(--blue);
+  border-radius: 3px;
+} /*mods*/
+
+.btn-white {
+  color: rgb(103, 151, 171);
+  background-color: #fff;
+  border-radius: 3px;
+} /*mods*/
+
+.btn-light-black {
+  background-color: #3a3a3a;
+  border-radius: 3px;
+}
+
+.justify-start {
+  justify-content: flex-start;
+} /*mods*/
+.justify-center {
+  justify-content: center;
+} /*mods*/
+.justify-between {
+  justify-content: space-between;
+} /*mods*/
+.justify-around {
+  justify-content: space-around;
+} /*mods*/
+.justify-end {
+  justify-content: flex-end;
+} /*mods*/
+
+.align-center {
+  align-content: center;
+} /*mods*/
+.align-items-center {
+  align-items: center;
+} /*mods*/
+.align-items-start {
+  align-items: flex-start;
+} /*mods*/
+.align-items-end {
+  align-items: flex-end;
+} /*mods*/
+
+.grow {
+  flex-grow: 1;
+} /*mods*/
+
+.bagBlue {
+  color: var(--bagBlue);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
+
+.bagBlue2 {
+  color: var(--bagBlue2);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
+
+.bagBlue3 {
+  color: var(--bagBlue3);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
+
+.bg-bagBlue {
+  background-color: var(--bagBlue);
+}
+.bg-bagBlue2 {
+  background-color: var(--bagBlue2);
+}
+.bg-bagBlue3 {
+  background-color: var(--bagBlue3);
+}
+
+.navy {
+  color: var(--navy);
+} /*mods*/ /*NEEDS UPDATING IN MODS*/
+.hover-inset-shadow:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.hover-light-black-bg-white:hover {
+  color: var(--light-black);
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.hover-white-bg-light-black:hover {
+  color: #fff;
+  background-color: var(--light-black);
+  border-color: var(--light-black);
+}
+
+.hover-white-bg-navy:hover {
+  color: #fff;
+  background-color: var(--navy);
+  border-color: var(--navy);
+}
+
+.h0 {
+  font-size: 2.5rem;
+} /*mods*/
+.h00 {
+  font-size: 2.25rem;
+} /*mods*/
+@media (min-width: 40em) {
+  .h00 {
+    font-size: 3rem;
+  }
+} /*mods*/
+
+.small-caps {
+  font-variant-caps: small-caps;
+} /*mods*/
+
+@media (min-width: 40em) {
+  .sm-py2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .sm-py3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+} /*mods*/
+
+@media (min-width: 52em) {
+  .md-py4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+} /*mods*/
+
+@media (min-width: 52em) {
+  .md-mtn3r {
+    margin-top: -3rem;
+  }
+}
+
+.top-50per {
+  top: 50%;
+}
+.bottom-50per {
+  bottom: 50%;
+}
+.bottom-45per {
+  bottom: 45%;
+}
+
+.bg-light-black {
+  background-color: var(--light-black);
+}
+.bg-light-black-transp1 {
+  background-color: rgba(58, 58, 58, 0.1);
+}
+.bg-light-black-transp2 {
+  background-color: rgba(58, 58, 58, 0.2);
+}
+.bg-light-black-transp3 {
+  background-color: rgba(58, 58, 58, 0.3);
+}
+.bg-light-black-transp4 {
+  background-color: rgba(58, 58, 58, 0.4);
+}
+.bg-light-black-transp5 {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+.bg-light-black-transp6 {
+  background-color: rgba(58, 58, 58, 0.6);
+}
+.bg-light-black-transp7 {
+  background-color: rgba(58, 58, 58, 0.7);
+}
+.bg-light-black-transp8 {
+  background-color: rgba(58, 58, 58, 0.8);
+}
+.sm-hide-bg-light-black-transp1 {
+  background-color: rgba(58, 58, 58, 0.1);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp1 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp2 {
+  background-color: rgba(58, 58, 58, 0.2);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp2 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp3 {
+  background-color: rgba(58, 58, 58, 0.3);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp3 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp4 {
+  background-color: rgba(58, 58, 58, 0.4);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp4 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp5 {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp5 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp6 {
+  background-color: rgba(58, 58, 58, 0.6);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp6 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp7 {
+  background-color: rgba(58, 58, 58, 0.7);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp7 {
+    background-color: transparent;
+  }
+}
+.sm-hide-bg-light-black-transp8 {
+  background-color: rgba(58, 58, 58, 0.8);
+}
+@media (min-width: 40em) {
+  .sm-hide-bg-light-black-transp8 {
+    background-color: transparent;
+  }
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: rgb(227, 227, 227);
+} /*mods*/
+.border-gray {
+  border-color: rgb(227, 227, 227);
+} /*mods*/
+.border-black {
+  border-color: #111;
+} /*mods*/
+.border-silver {
+  border-color: #ddd;
+} /*mods*/
+.border-dark-gray {
+  border-color: #aaa;
+} /*mods*/
+.dark-gray {
+  color: #aaa;
+} /*mods*/
+.light-black {
+  color: var(--light-black);
+} /*mods*/
+
+.border-thin {
+  border-width: 0.5rem;
+}
+.border-thick {
+  border-width: 1rem;
+}
+.border-navy {
+  border-color: rgb(36, 56, 83);
+}
+.border-mustard {
+  border-color: rgb(168, 120, 38);
+}
+.border-white {
+  border-color: #fff;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+
+.left-32 {
+  left: 32px;
+}
+
+.is-active,
+.is-active:hover,
+.is-active:focus {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+    inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
+} /*mods*/
+.is-active:hover {
+  cursor: default;
+} /*mods*/
+
+.pb1 {
+  padding-bottom: 0.5rem;
+} /*mods*/
+.pt1 {
+  padding-top: 0.5rem;
+} /*mods*/
+.pt2 {
+  padding-top: 1rem;
+} /*mods*/
+.pt3 {
+  padding-top: 2rem;
+} /*mods*/
+.pt4 {
+  padding-top: 2rem;
+} /*mods*/
+.pl3 {
+  padding-left: 2rem;
+} /*mods*/
+.pbQuart {
+  padding-bottom: 0.25rem;
+} /*mods*/
+.py-quarter {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+} /*mods*/
+
+.transparent {
+  color: transparent;
+} /*mods*/
+
+.border-2px {
+  border-width: 2px;
+} /*mods*/
+
+.lazyload,
+.lazyloading {
+  min-height: 200px;
+}
+
+.flex-row {
+  flex-direction: row;
+} /*mods*/
+
+.order0 {
+  order: 0;
+} /*mods*/
+.order1 {
+  order: 1;
+} /*mods*/
+
+.maxw-300px {
+  width: 250px;
+  max-width: 300px;
+}
+
+.maxw-25rem {
+  max-width: 25rem;
+}
+
+.w-45px {
+  width: 45px;
+}
+.w-55px {
+  width: 55px;
+}
+
+.x-btn-group > .btn + .btn {
+  margin-left: -1px;
+}
+.x-btn-group > .btn:hover + .btn {
+  /* this corrects the appearance of
+     the right border of the hovered button
+     not changing on hover
+  */
+  border-left-color: currentColor;
+}
+
+.before-crossbody::before {
+  content: 'Cross ';
+}
+@media (min-width: 23.75em) {
+  .before-crossbody::before {
+    content: 'Cross';
+  }
+}
+
+.before-backpack::before {
+  content: 'Back ';
+}
+@media (min-width: 23.75em) {
+  .before-backpack::before {
+    content: 'Back';
+  }
+}
+
+.btn-hero {
+  line-height: 1.125em;
+} /*mods*/
+@media (min-height: 30em) {
+  .btn-hero {
+    margin-bottom: 3rem;
+  }
+} /*mods*/
+@media (min-height: 40em) {
+  .btn-hero {
+    margin-bottom: 5rem;
+  }
+} /*mods*/
+@media (min-width: 40em) and (min-height: 36.75em) {
+  .btn-hero {
+    margin-bottom: 10rem;
+  }
+} /*mods*/
+@media (min-width: 40em) and (min-height: 50em) {
+  .btn-hero {
+    margin-bottom: 13rem;
+  }
+} /*mods*/
+@media (min-width: 40em) and (min-height: 68em) {
+  .btn-hero {
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+  }
+} /*mods*/
+
+@media (max-width: 30em) {
+  .btn-small {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+} /*mods*/
+
+@media (max-width: 23.125em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    word-break: break-word;
+    font-weight: 400;
+  }
+}
+@media (max-width: 19.375em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.1rem;
+    padding-left: 0.1rem;
+    word-break: break-word;
+    font-weight: 400;
+  }
+}
+@media (min-width: 19.4375em) and (max-width: 22.3125em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 22.375em) and (max-width: 28em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+@media (min-width: 28em) and (max-width: 31.0625em) {
+  .btn-filter {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+@media (min-width: 31.125em) and (max-width: 35em) {
+  .btn-filter {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 40em) and (min-height: 36.75em) {
+  .smxsm-py4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+} /*mods*/
+
+.v-align-bottom {
+  vertical-align: bottom;
+} /*mods*/
+@media (min-width: 40em) {
+  .sm-v-align-top {
+    vertical-align: top;
+  }
+} /*mods*/
+
+.thumb-border {
+  border: 3px solid rgb(36, 56, 83);
+} /*mods*/
+
+@media (min-width: 40em) {
+  .sm-width-auto {
+    width: auto;
+  }
+  .sm-block {
+    display: block;
+  }
+  .sm-h2 {
+    font-size: 1.5rem;
+  }
+  .sm-h3 {
+    font-size: 1.25rem;
+  }
+  .sm-h4 {
+    font-size: 1rem;
+  }
+  .sm-lh1 {
+    line-height: 1;
+  }
+  .sm-lh1point5 {
+    line-height: 1.5;
+  }
+  .sm-border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.125);
+  }
+  .sm-p1 {
+    padding: 0.5rem;
+  }
+  .sm-p2 {
+    padding: 1rem;
+  }
+  .sm-pt0 {
+    padding-top: 0;
+  }
+  .sm-pbQuart {
+    padding-bottom: 0.25rem;
+  }
+  .sm-px2 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .sm-py1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .sm-py4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .sm-m0 {
+    margin: 0;
+  }
+  .sm-mr2 {
+    margin-right: 1rem;
+  }
+  .sm-mb0 {
+    margin-bottom: 0;
+  }
+  .sm-mb1 {
+    margin-bottom: 0.5rem;
+  }
+  .sm-ml3 {
+    margin-left: 2rem;
+  }
+  .sm-mt4 {
+    margin-top: 4rem;
+  }
+  .sm-mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sm-right-align {
+    text-align: right;
+  }
+  .sm-left-align {
+    text-align: left;
+  }
+  .sm-flex {
+    display: flex;
+  }
+  .sm-align-items-start {
+    align-items: flex-start;
+  }
+  .sm-justify-start {
+    justify-content: flex-start;
+  }
+  .sm-justify-around {
+    justify-content: space-around;
+  }
+  .sm-justify-between {
+    justify-content: space-between;
+  }
+  .sm-justify-center {
+    justify-content: center;
+  }
+  .sm-order0 {
+    order: 0;
+  }
+  .sm-order1 {
+    order: 1;
+  }
+  .sm-order2 {
+    order: 2;
+  }
+  .sm-flex-row {
+    flex-direction: row;
+  }
+  .sm-flex-column {
+    flex-direction: column;
+  }
+  .sm-flex-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .sm-flex-grow {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  .sm-flex-shrink {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 40em) and (min-height: 68em) {
+  .sm-x-tall--justify-center {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 52em) {
+  .md-mt4 {
+    margin-top: 4rem;
+  }
+  .md-mb4 {
+    margin-bottom: 4rem;
+  }
+  .md-px2 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .md-width-auto {
+    width: auto;
+  }
+  .md-w-55px {
+    width: 55px;
+  }
+  .md-flex {
+    display: flex;
+  }
+  .md-align-items-start {
+    align-items: flex-start;
+  }
+  .md-justify-start {
+    justify-content: flex-start;
+  }
+  .md-justify-between {
+    justify-content: space-between;
+  }
+  .md-flex-row {
+    flex-direction: row;
+  }
+  .md-flex-column {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 76em) {
+  .lg-ml0 {
+    margin-left: 0;
+  }
+}
+
+/* ie 11 hacks, via https://github.com/philipwalton/flexbugs */
+
+/* 2. Column flex items set to align-items:center overflow their container */
+/* Flexbug demo 2.1.b (workaround) */
+/* When using align-items:center on a flex container in the column direction, the contents of flex item, if too big, will overflow their container in IE 10-11.*/
+/* Most of the time, this can be fixed by simply setting max-width:100% on the flex item. If the flex item has a padding or border set, you'll also need to make sure to use box-sizing:border-box to account for that space. If the flex item has a margin, using box-sizing alone will not work, so you may need to use a container element with padding instead. */
+.ie-border-box {
+  box-sizing: border-box;
+} /* 2 */
+.ie-max-w-100per {
+  max-width: 100%;
+} /* 1 */
+
+/* 3. min-height on a flex container won't apply to its flex items */
+/* Flexbug demo 3.2.b — workaround */
+/* For cases where min-height is required, the workaround is to add a wrapper element around the flex container that is itself a flex container in the column direction. For some reason nested flex containers are not affected by this bug. Demo 3.2.a shows a visual design where min-height is required, and demo 3.2.b shows how this bug can be avoided with a wrapper element. */
+/*
+.FlexContainerWrapper {
+  display: flex;
+  flex-direction: column;
+}                          /* 1 */ /*
+
+.FlexContainer {
+  align-items: center;
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  padding: 2em;
+  min-height: 250px;
+  width: 400px;
+}
+
+.FlexItem {
+  background: hsla(0,0%,0%,.1);
+  box-sizing: border-box; /* 1 */ /*
+  max-width: 100%; /* 1 */ /*
+  padding: 0 1em;
+}
+*/
+
+.ie-FlexContainerWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  NOTE: the situations the above hack pertains to are:
+    - .vh100 [completed (a few instances)]
+    - .minh-400px [completed (no instances)]
+    - .lazyload [completed (no instances)]
+*/
+
+/* THE ABOVE CLASSES COVER THE NECESSARY CLASSES FOR THIS BUG, DON'T FORGET THE FLEX CONTAINER WRAPPER!!
+box-sizing: border-box; /* 1 */ /*
+max-width: 100%; /* 1 */ /*
+*/
+
+/* 4. flex shorthand declarations with unitless flex-basis values are ignored */
+/* Flexbug demo 4.1.b — workaround */
+/* When using the flex shorthand, always include a unit in the flex-basis portion. For example: 1 0 0%.
+
+Important: using a flex value of something like 1 0 0px can still be a problem because many CSS minifiers will convert 0px to 0. To avoid this, make sure to use 0% instead of 0px since most minifiers won't touch percentage values for other reasons. */
+/*
+/**
+ * Flexbug demo 4.1.a (workaround)
+ *
+ * 1. Always add a unit to `flex-basis`
+ *    values. Note, prefer `0%` to `0px`
+ *    since some minifiers will convert
+ *   `0px` to just `0`.
+ */ /*
+
+.FlexContainer {
+  display: flex;
+}
+.FlexItem {
+  flex: 1 0 0%; /* 1 */ /*
+}
+*/
+
+/* 5. Column flex items don't always preserve intrinsic aspect ratios */
+/* Flexbug demo 5.1.b — workaround */
+/* You can avoid this problem by adding a container element to house the element with the intrinsic aspect ratio. Since doing this causes the element with the intrinsic aspect ratio to no longer be a flex item, it will be sized normally. */
+/**
+ * Flexbug #5 (workaround)
+ *
+ * 1. Add a wrapper element to house
+ *    the element with an intrinsic
+ *    aspect ratio.
+ * 2. Flexbug #2 workaround.
+ */
+
+/*.FlexContainer {
+  background: hsla(0,0%,0%,.1);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 1em;
+  width: 300px;
+}*/
+
+.ie-FlexItem {
+  /* 1 */
+  flex-shrink: 0; /* 2 */
+} /* IS THIS HACK NECESSARY FOR MY CODE? MAYBE TRY USING THE STYLES BELOW TOO? */
+
+.ie-FlexItem img {
+  height: auto;
+  width: 100%;
+}
+
+/* 6. The default flex value has changed */
+/* If you have to support IE 10, the best solution is to always set an explicit flex-shrink value on all of your flex items, ... */
+
+/* not supporting ie 10 for the MVP launch */
+
+/* 7. flex-basis doesn't account for box-sizing:border-box */
+/*  */
+
+/**
+ * Flash styles
+ */
+.info-flash {
+  color: var(--color-info);
+  background-color: var(--bg-color-info);
+  border: 1px solid var(--border-color-info);
+}
+.warning-flash {
+  color: var(--color-warning);
+  background-color: var(--bg-color-warning);
+  border: 1px solid var(--border-color-warning);
+}
+
+/**
+ * Product buy button
+ */
+
+.buy-btn {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  line-height: 1.125rem;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  font-weight: 200;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  vertical-align: middle;
+  color: var(--light-black);
+  background-color: transparent;
+  appearance: none;
+}
+@media only screen and (min-width: 52em) {
+  .buy-btn {
+    width: auto;
+  }
+}
+
+.buy-btn:hover {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625);
+}
+.buy-btn:active {
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.125),
+    inset 0 3px 4px 0 rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.125);
+}
+.buy-btn:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.buy-btn:disabled:hover,
+.buy-btn:disabled:active,
+.buy-btn:disabled:focus {
+  cursor: default;
+  box-shadow: none;
+  border-color: currentColor;
+  outline: none;
+}
+
+/**
+ * Sold out stickers
+ */
+
+.sticker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 0.75px;
+  line-break: loose; /* fix safari break */
+  text-transform: uppercase;
+  background: var(--light-black);
+  color: #fff;
+}
+
+/**
+ * Markdown product pages
+ */
+[data-markdown='product-description'] p {
+  font-family: var(--serif);
+  color: var(--light-black);
+}
+
+/**
+ * Markdown about page
+ */
+[data-markdown='about-page'] h1,
+[data-markdown='about-page'] h2 {
+  font-size: 2rem;
+  font-family: var(--serif);
+  text-align: center;
+  color: var(--light-black);
+}
+[data-markdown='about-page'] p {
+  font-family: var(--serif);
+  color: var(--light-black);
+}
+[data-markdown='about-page'] a {
+  color: var(--light-black);
+  text-decoration: underline;
+}
+
+/*
+ * Fade in/out
+ * - add `.fade.opacity0` to start hidden
+ * - toggle `.opacity0` to fade in/out
+ * Used in portfolio.html include
+ */
+.opacity0 {
+  opacity: 0;
+}
+
+.fade {
+  transition: opacity 0.4s;
+}

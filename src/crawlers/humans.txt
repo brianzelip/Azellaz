@@ -1,0 +1,8 @@
+/* TEAM */
+Developer: Brian Zelip
+Author: Abigal Zelip
+Location: Baltimore, Maryland, USA
+                            
+/* SITE */
+Software: HTML/CSS/JS, Node.js, PostCSS, 11ty, Netlify, GitHub
+Repository: https://github.com/brianzelip/Azellaz.com

@@ -1,0 +1,27 @@
+{
+  "descriptionShort": "Screenprinted felt pouch.",
+  "body": "A practical and lovely little pouch for all of your organizing needs. Great for small craft supplies and tools on the go. \n\nMade from industrial wool felt and printed with solvent-free inks. Nylon YKK zipper.\n\nDesigned, hand-printed, and sewn by me in Baltimore.\n\nApproximate dimensions: 5.5 inches wide x 3.5 inches tall x 2.5 inches deep",
+  "width": "8",
+  "length": "16",
+  "height": "10",
+  "price": "25",
+  "name": "AZ0052-001 Circular pouch - felt - small - black gingko",
+  "slug": "circle-pouch-small-black-gingko",
+  "currentListing": true,
+  "materials": [
+    "felt"
+  ],
+  "displayName": "Small Felt Circle Pouch / Black Gingko",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1582133699/AZ0052-001-02_pv80r6.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582133699/AZ0052-001-03_pqhtcl.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582133699/AZ0052-001-04_jsttdl.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582133700/AZ0052-004-01_lovd8v.jpg"
+  ],
+  "weight": "57",
+  "type": [
+    "circular pouch"
+  ],
+  "id": "AZ0052-001",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587495290/AZ0052-001-01_vvvhfj.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "descriptionShort": "Screenprinted felt and leather backpack.",
+  "body": "This backpack is made from Horween leather and hand-printed industrial wool felt. It is built to last while providing a practical and beautiful accessory for your daily adventures.\n\nDesigned and made from scratch by me, in Baltimore.\n\nIncludes an interior leather pocket, snap closure, and all solid brass hardware.\n\nApproximate dimensions: 13 inches wide x 14 inches tall x 3 inches deep",
+  "width": "13",
+  "length": "38",
+  "height": "38",
+  "price": "265",
+  "name": "AZ0069-002 Backpack - english tan",
+  "slug": "backpack-tan",
+  "currentListing": false,
+  "materials": [
+    "felt",
+    "leather"
+  ],
+  "displayName": "Leather and Felt Backpack / English Tan",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/backpacks-by-Azellaz.jpg"
+  ],
+  "weight": "737",
+  "type": [
+    "backpack"
+  ],
+  "id": "AZ0069-002",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/backpack-tan-front-by-Azellaz.jpg"
+}

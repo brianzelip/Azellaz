@@ -1,0 +1,27 @@
+{
+  "descriptionShort": "Onion skin printed felt and leather tote bag.",
+  "body": "This is the pocket-lover’s tote! It includes four outside pockets in onion skin-printed felt. Fits a laptop or tablet in addition to all of the essentials.\n\nI print each of these bags with onion skins – no other dyes, the skins alone create these colors! Onion is lightfast on wool but the yellows may become less brilliant over time (it is best to avoid storing in direct sunlight for this reason). The felt is the highest density of industrial wool felt; it may pill slightly during the first week or so of wear, but simply remove pills with a lint remover (or your fingers) and this will soon subside. Includes all brass hardware.\n\nFor cleaning, a lint roller is your best friend. You may spot clean with water and gentle detergent, but do not submerge in water.\n\nApproximate dimensions: 15 inches wide x 13 inches tall x 3 inches deep.",
+  "width": 13,
+  "length": 48,
+  "height": 36,
+  "price": 190,
+  "layout": "product",
+  "name": "AZ0067-017 Medium Felt Tote - Onion",
+  "slug": "AZ0067-017-medium-felt-tote-onion",
+  "currentListing": true,
+  "materials": [
+    "felt",
+    "leather"
+  ],
+  "displayName": "Medium Felt Tote / Onion Skin",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035873/AZ0067-017-02_qqkqs7.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035881/AZ0067-017-03_kmcfc9.jpg"
+  ],
+  "weight": 567,
+  "type": [
+    "tote"
+  ],
+  "id": "AZ0067-017",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1607035873/AZ0067-017-01_gvdnq1.jpg"
+}

@@ -1,0 +1,26 @@
+{
+  "descriptionShort": "Hand-dyed felt pouch.",
+  "body": "A practical and lovely pouch for all of your organizing needs. Great for craft supplies, makeup, or tools on the go!\n\nMade from industrial wool felt and eco-printed with eucalyptus. Nylon YKK zipper.\n\nDesigned, hand-dyed, and sewn by me in Baltimore.\n\nApproximate dimensions: 7 in wide x 5 in tall x 4 in deep",
+  "width": 10,
+  "length": 18,
+  "height": 13,
+  "price": 40,
+  "name": "AZ0053-001 Circular pouch - felt - medium - eucalyptus",
+  "slug": "AZ0053-001-circle-pouch-medium-eucalyptus",
+  "currentListing": false,
+  "materials": [
+    "felt"
+  ],
+  "displayName": "Medium Felt Circle Pouch / Eucalyptus",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496459/AZ0053-001-01_homn5p.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496450/AZ0053-001-03_s4o5i8.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1587496452/AZ0053-001-04_p7uwvl.jpg"
+  ],
+  "weight": 113,
+  "type": [
+    "circular pouch"
+  ],
+  "id": "AZ0053-001",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1587496450/AZ0053-001-02_zrhgpb.jpg"
+}

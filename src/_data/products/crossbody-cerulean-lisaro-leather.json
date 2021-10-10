@@ -1,0 +1,28 @@
+{
+  "descriptionShort": "Crossbody bag made from beeswaxed canvas and leather.",
+  "body": "An everyday bag that fits all of the essentials (phone, wallet, keys) + a few extras (book, sunglasses, knitting, etc). The crossbody strap is adjustable and removable, so the bag can also be used as a clutch.\n\nI wax each piece by hand with a beeswax blend. The base of the bag is made from lisaro leather, which is hand tanned and luxurious. Includes all brass hardware, Riri zipper, and internal zippered pocket.\n\n11 inches wide x 10 inches tall x 2.5 inches deep.",
+  "width": "6",
+  "length": "28",
+  "height": "25",
+  "price": "90.00",
+  "name": "AZ0013-01 Crossbody - cerulean - lisaro",
+  "slug": "crossbody-cerulean-lisaro-leather",
+  "currentListing": false,
+  "materials": [
+    "waxed canvas",
+    "leather"
+  ],
+  "displayName": "Cerulean Crossbody / Lisaro Leather",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-side-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-inside-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-strap1-by-Azellaz.jpg"
+  ],
+  "weight": "284",
+  "type": [
+    "crossbody"
+  ],
+  "id": "AZ0013-01",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/crossbody-cerulean-lisaro-leather-front-by-Azellaz.jpg"
+}

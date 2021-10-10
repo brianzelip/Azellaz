@@ -1,0 +1,115 @@
+.ih-item {
+  position: relative;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item,
+.ih-item * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+.ih-item.circle {
+  position: relative;
+}
+.ih-item.circle .img {
+  position: relative;
+}
+.ih-item.circle .img:before {
+  position: absolute;
+  display: block;
+  content: '';
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.circle .info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ih-item.circle.effect13 .info {
+  background: #333333;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.circle.effect13 .info h3 {
+  visibility: hidden;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+
+  margin: 0 30px;
+  padding: 55px 0 0 0;
+  /*height: 110px; -- better layout when h3 takes up 3 lines*/
+  text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.circle.effect13 .info p {
+  visibility: hidden;
+  color: #bbb;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.ih-item.circle.effect13 a:hover .info {
+  opacity: 1;
+}
+.ih-item.circle.effect13 a:hover h3 {
+  visibility: visible;
+}
+.ih-item.circle.effect13 a:hover p {
+  visibility: visible;
+}
+
+.ih-item.circle.effect13.from_left_and_right .info h3 {
+  -webkit-transform: translateX(-3rem);
+  -moz-transform: translateX(-3rem);
+  -ms-transform: translateX(-3rem);
+  -o-transform: translateX(-3rem);
+  transform: translateX(-3rem);
+}
+.ih-item.circle.effect13.from_left_and_right .info p {
+  -webkit-transform: translateX(3rem);
+  -moz-transform: translateX(3rem);
+  -ms-transform: translateX(3rem);
+  -o-transform: translateX(3rem);
+  transform: translateX(3rem);
+}
+.ih-item.circle.effect13.from_left_and_right a:hover h3 {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.ih-item.circle.effect13.from_left_and_right a:hover p {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

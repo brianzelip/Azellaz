@@ -1,0 +1,127 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: 'images'
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: azellaz
+    api_key: 598778136512764
+    multiple: true
+site_url: https://www.azellaz.com/
+logo_url: https://www.azellaz.com/images/Azellaz_Logo_Soft_Black_v6.svg
+collections:
+  - label: 'Products'
+    label_singular: 'Product'
+    name: 'products'
+    folder: 'src/_data/products'
+    format: 'json'
+    create: true
+    identifier_field: name
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'product'
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - label: 'Full display name'
+        name: 'displayName'
+        widget: 'string'
+        required: false
+      - label: 'Page URL (lowercase, hyphenated words, ie: backpack-tan)'
+        name: 'slug'
+        widget: 'string'
+      - { label: 'id', name: 'id', widget: 'string', default: 'AZ00' }
+      - label: 'Include item in shop?'
+        name: 'currentListing'
+        widget: 'boolean'
+        default: false
+      - label: 'Bag type'
+        name: 'type'
+        widget: 'select'
+        multiple: true
+        options: ['backpack', 'circular pouch', 'tote']
+        required: false
+      - label: 'Short description (one sentence)'
+        name: 'descriptionShort'
+        widget: 'string'
+        required: false
+      - label: 'Long description'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+      - label: 'Materials'
+        name: 'materials'
+        widget: 'select'
+        multiple: true
+        options: ['felt', 'leather', 'waxed canvas']
+        required: false
+      - label: 'Price in $'
+        name: 'price'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Weight in grams'
+        name: 'weight'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Height in centimeters'
+        name: 'height'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Width in centimeters'
+        name: 'width'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Length in centimeters'
+        name: 'length'
+        widget: 'number'
+        valueType: 'int'
+        required: false
+      - label: 'Primary photo'
+        name: 'imgPrimary'
+        widget: 'image'
+        allow_multiple: false
+        required: false
+      - label: 'Secondary photos'
+        name: 'imgSecondarySet'
+        widget: 'list'
+        allow_multiple: true
+        field: { label: Image, name: image, widget: image }
+        required: false
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'About'
+        name: 'about'
+        file: 'src/about.md'
+        fields:
+          - {
+              label: 'About page content',
+              name: body,
+              widget: markdown,
+              required: true
+            }
+  - label: 'Portfolio'
+    name: 'portfolio'
+    files:
+      - label: 'Portfolio images'
+        name: 'portfolioImages'
+        file: 'src/_data/portfolio.json'
+        fields:
+          - label: 'Images'
+            label_singular: 'image'
+            name: 'images'
+            widget: 'list'
+            collapsed: true
+            summary: '{{fields.image}}'
+            field:
+              {
+                label: Image,
+                name: image,
+                widget: image,
+                media_library: { config: { multiple: false } }
+              }

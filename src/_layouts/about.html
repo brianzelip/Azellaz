@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <section>
+      <div class="container">
+        <div class="mb3 light-black">
+          <div class="sm-mx-auto sm-col-6">
+            <div class="p2" data-markdown="about-page">
+              <img
+                src="{{ site.meta.images.about }}"
+                alt="Azellaz work bench"
+                title="Azellaz work bench"
+              />
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>

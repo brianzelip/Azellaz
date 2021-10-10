@@ -1,0 +1,26 @@
+{
+  "descriptionShort": "Indigo-dyed waxed canvas and leather duffle.",
+  "body": "Sized to fit carry-on restrictions, this duffle is made to be your reliable travel companion. Includes two side pockets and one front pocket.\n\nEach piece is hand dyed with indigo and hand waxed with beeswax. The straps are made from lisaro leather, which is tanned by hand and luxurious. Includes all brass hardware and a Riri zipper.\n\n21 inches wide x 8.5 inches tall x 11.5 inches deep.",
+  "width": "31",
+  "length": "53",
+  "height": "23",
+  "price": "300.00",
+  "name": "AZ0014-01 Duffle - indigo shibori",
+  "slug": "duffle-indigo-shibori",
+  "currentListing": false,
+  "materials": [
+    "waxed canvas",
+    "leather"
+  ],
+  "displayName": "Indigo Shibori Duffle / Lisaro Leather",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-back-by-Azellaz.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-side-by-Azellaz.jpg"
+  ],
+  "weight": "907",
+  "type": [
+    "duffle"
+  ],
+  "id": "AZ0014-01",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/duffle-indigo-shibori-front-by-Azellaz.jpg"
+}

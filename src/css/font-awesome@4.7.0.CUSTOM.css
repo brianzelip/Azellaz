@@ -1,0 +1,86 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+/*
+  THIS IS A CUSTOMIZED INSTANCE OF Font Awesome.
+  In addition to getting rid of everything not related to the 4 icons used,
+  - all `em`s were changed to `rem`s
+  - an additional rule was created
+*/
+
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0')
+      format('embedded-opentype'),
+    url('/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333rem;
+  /*line-height: 0.75rem;*/
+  vertical-align: -15%;
+}
+.fa-h2 {
+  font-size: 1.5rem;
+} /*custom style*/
+.fa-2x {
+  font-size: 2rem;
+}
+.fa-3x {
+  font-size: 3rem;
+}
+.fa-4x {
+  font-size: 4rem;
+}
+.fa-5x {
+  font-size: 5rem;
+}
+.fa-fw {
+  width: 1.28571429rem;
+  text-align: center;
+}
+/*removed rules*/
+.fa-border {
+  padding: 0.2em 0.25em 0.15rem;
+  border: solid 0.08em #eeeeee;
+  border-radius: 0.1rem;
+}
+/*removed rules*/
+.fa-inverse {
+  color: #ffffff;
+}
+/*removed rules*/
+.fa-github:before {
+  content: '\f09b';
+}
+.fa-instagram:before {
+  content: '\f16d';
+}
+.fa-envelope-o:before {
+  content: '\f003';
+}
+.fa-shopping-cart:before {
+  content: '\f07a';
+}
+.fa-exclamation-circle:before {
+  content: '\f06a';
+}

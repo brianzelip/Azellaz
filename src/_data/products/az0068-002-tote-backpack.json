@@ -1,0 +1,30 @@
+{
+  "descriptionShort": "Tote bag that converts to a backpack.",
+  "body": "I call this the Everything Bag; not only can you fit your whole life into it (while maintaining a sleek silhouette), but it also transitions eaily between a tote and a backpack!\n\nThis bag has two external pocket made from felt that has been dyed with onion skins.\n\nMade from wool felt with leather straps and all-brass hardware. The felt may pill slightly during the first week or so of wear, but simply remove pills with a lint remover (or your fingers) and this will soon subside. \n\nApproximate dimensions: 18 in wide x 12 in tall x 7 in wide",
+  "width": 47,
+  "length": 20,
+  "height": 32,
+  "price": 220,
+  "layout": "product",
+  "name": "AZ0068-002 Tote/Backpack",
+  "slug": "AZ0068-002-tote-backpack",
+  "currentListing": true,
+  "materials": [
+    "felt",
+    "leather"
+  ],
+  "displayName": "Tote / Backpack Crossover",
+  "imgSecondarySet": [
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035880/AZ0068-002-02_hdojn7.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1607035881/AZ0068-002-03_q5s9nf.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582135164/AZ0068-002-04_cl2glv.jpg",
+    "https://res.cloudinary.com/azellaz/image/upload/v1582135162/AZ0068-002-05_jihbx6.jpg"
+  ],
+  "weight": 567,
+  "type": [
+    "tote",
+    "backpack"
+  ],
+  "id": "AZ0068-002",
+  "imgPrimary": "https://res.cloudinary.com/azellaz/image/upload/v1607035878/AZ0068-002-01_uyvwds.jpg"
+}

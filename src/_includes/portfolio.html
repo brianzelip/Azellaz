@@ -1,0 +1,38 @@
+<section id="portfolio" class="mb3 md-mb4">
+  <div class="p2 center serif light-black">
+    <h1 class="mt0 serif">Portfolio</h1>
+    <p>
+      This page includes photos of past work only. Current bags are available in
+      <a href="/index.html#shop" class="light-black underline">our shop</a>.
+    </p>
+  </div>
+  <div class="container">
+    {% include portfolio-grid.html %}
+    {% include fixed-logo.html, includeClass: 'fade opacity0' %}
+  </div>
+</section>
+
+<script>
+  const logo = document.querySelector(".fixed-logo-show");
+  let portfolioTicking = false;
+
+  function portfolioScrollHandler(pos) {
+    pos > 200
+      ? logo.classList.remove('opacity0')
+      : logo.classList.add('opacity0');
+  }
+
+  window.addEventListener('scroll', function () {
+    currentScrollPosition = window.scrollY;
+
+    if (!portfolioTicking) {
+      window.requestAnimationFrame(function () {
+        portfolioScrollHandler(currentScrollPosition);
+
+        portfolioTicking = false;
+      });
+
+      portfolioTicking = true;
+    }
+  });
+</script>

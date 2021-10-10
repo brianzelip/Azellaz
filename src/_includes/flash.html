@@ -1,0 +1,15 @@
+<aside
+  class="px1{% if page.url == '/' %} mtn2 md-mtn3r mb2{% else %}{% endif %}"
+  data-js="flash-{{ includeFlashIdSuffix }}"
+>
+  <div class="{{ includeFlashClass }} p2 flex flex-center justify-between">
+    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+    <span class="px2 flex-auto h5 sm-h4">{{ includeFlashMessage }}</span>
+    <span class="cursor-default" data-js="x-{{ includeFlashIdSuffix }}">&times;</span>
+  </div>
+  <script>
+    $('[data-js="x-{{ includeFlashIdSuffix }}"]').click(function () {
+      $('[data-js="flash-{{ includeFlashIdSuffix }}"]').fadeOut();
+    });
+  </script>
+</aside>
