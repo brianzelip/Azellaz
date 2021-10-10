@@ -23,6 +23,10 @@ This document started at v1.6.10 and only documents work after v1.6.10.
 - have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
 - have a stockists page, a la https://ventura-demo.squarespace.com/stockists
 
+## [4.0.0] - 2021-10-10
+
+Switch Netlify source repo from [Azellaz.com](https://github.com/brianzelip/Azellaz.com) to [Azellaz](https://github.com/brianzelip/Azellaz). Let's see how this (nearly image-free codebase) impacts build time!
+
 ## [3.6.0] - 2021-10-10
 
 Offload all photos in images to Cloudinary and organize image assets.
