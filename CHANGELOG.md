@@ -7,21 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## README
 
-This document started at v1.6.10 and only documents work after v1.6.10.
+This document started at v1.6.10 in the [Azellaz.com](https://github.com/brianzelip/Azellaz.com) repo and only documents work after v1.6.10.
 
 ## [Unreleased]
 
-### TODO
+## [4.0.1] - 2021-10-11
 
-- carousel landing page
-- validate that for each product that is to be included in the shop, each product has a unique ID; currently, `AZ00` is the default `id` for new products. This is helpful for data input, but hairy for making snipcart work via unique ids for each product. (The thin-ness isn't only due to not-validating here, it's the fact that the snipcart database is distinct from this front end pipeline. ie: It's a much bigger issue!)
-- Update `_includes/shop-grid-item.html` to render "OUT OF STOCK" when `product.inStock === 0`
+Clean up readme, maintenance.md, and this changelog file.
 
-### Talk w/ Abbie
+### Updated
 
-- do you like call out sections with bigger text, a la https://crosby-demo.squarespace.com/our-story?
-- have a stories/articles/info-sharing section - something that doesn't have to be updated, a la https://hester-demo.squarespace.com/blog
-- have a stockists page, a la https://ventura-demo.squarespace.com/stockists
+- readme.md: edit for new repo context
+- maintenance.md: get rid of old stuff, consolidate relevant notes from changelog
+- changelog.md: move site notes to maintenance.md
 
 ## [4.0.0] - 2021-10-10
 
