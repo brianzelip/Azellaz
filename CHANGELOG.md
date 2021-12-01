@@ -11,6 +11,14 @@ This document started at v1.6.10 in the [Azellaz.com](https://github.com/brianze
 
 ## [Unreleased]
 
+## [4.0.2] - 2021-12-01
+
+Fix Netlify build hook in lambda.
+
+### Updated
+
+- src/lambda/snipcart-webhook-listener.js
+
 ## [4.0.1] - 2021-10-11
 
 Clean up readme, maintenance.md, and this changelog file.

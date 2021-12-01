@@ -1,6 +1,6 @@
 {
   "name": "azellaz",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
   "scripts": {
     "clean": "rm -rf _site",
