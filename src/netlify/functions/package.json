@@ -1,0 +1,7 @@
+{
+  "name": "azellaz-netlify-functions",
+  "version": "0.3.0",
+  "description": "Azellaz Netlify functions, including triggering a Netlify build from a Snipcart webhook.",
+  "author": "Brian Zelip",
+  "license": "MIT"
+}
