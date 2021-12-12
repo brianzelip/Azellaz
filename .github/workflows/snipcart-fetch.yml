@@ -1,0 +1,23 @@
+name: Snipcart fetch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        id: install
+        run: npm ci
+
+      - name: Ingest current product data into Snipcart
+        id: fetch
+        env:
+          SNIPCART_POST: ${{ secrets.SNIPCART_POST }}
+        run: npm run snipcart:fetch

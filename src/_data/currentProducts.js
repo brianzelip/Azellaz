@@ -1,10 +1,16 @@
 /**
- * Export an array of current products, including stock amount
- * from snipcart, for 11ty pagination of the product.md template.
+ * This is an 11ty global data file.
  *
- * While this data is computed from other 11ty global data, it can't
- * be refactored as eleventyComputed data since 11ty can't yet paginate
- * computed data. See https://github.com/11ty/eleventy/issues/1110.
+ * It exports an array of current products to 11ty, including product
+ * quantity data fetched from Snipcart, for paginating the product.md
+ * template into all current product pages.
+ *
+ * Ideally the paginattion would happen directly from the product json files
+ * and avoid the extra step of this file. But because not every product json
+ * file is a current product, "current products" is a computed value based
+ * on data in each file, and 11ty can't yet paginate computed data (see
+ * https://github.com/11ty/eleventy/issues/1110).
+ *
  */
 const process = require('process');
 const fs = require('fs');

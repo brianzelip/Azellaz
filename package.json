@@ -8,7 +8,8 @@
     "start": "npm run clean && npx @11ty/eleventy --serve",
     "build:raw": "npx @11ty/eleventy",
     "build": "npm run clean && npm run build:raw",
-    "build:netlify": "npm run build:raw"
+    "build:netlify": "npm run build:raw",
+    "snipcart:fetch": "node .snipcart/productFetchHandler.js"
   },
   "repository": {
     "type": "git",
