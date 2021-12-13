@@ -5,7 +5,7 @@
  * quantity data fetched from Snipcart, for paginating the product.md
  * template into all current product pages.
  *
- * Ideally the paginattion would happen directly from the product json files
+ * Ideally the pagination would happen directly from the product json files
  * and avoid the extra step of this file. But because not every product json
  * file is a current product, "current products" is a computed value based
  * on data in each file, and 11ty can't yet paginate computed data (see

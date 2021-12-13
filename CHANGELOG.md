@@ -11,6 +11,43 @@ This document started at v1.6.10 in the [Azellaz.com](https://github.com/brianze
 
 ## [Unreleased]
 
+## [4.1.0] - 2021-12-13
+
+Added Snipcart API workflow for Snipcart fetching of product pages for creating or updating products.
+
+Added GitHub Actions workflow for automating the Snipcart workflow against eery current product on every push to main. This was the easiest route to MVP, but very inefficient. A future refactor would aim for identifying any product json file in a push, then identify if any [product-defining data](https://docs.snipcart.com/v2/configuration/product-definition) changed, then running the Snipcart workflow against just that product.
+
+Moved netlify functions to root dir.
+
+### Added
+
+- .snipcart/productFetch.js
+- .snipcart/productFetchHandler.js
+- .github/workflows/snipcart-fetch.yml
+
+### Updated
+
+- package.json: added `snipcart:fetch` script
+- src/admin/config.yml: Fixed outdated branch name
+- src/netlify/functions -> .netlify/functions
+- netlify.toml
+- src/\_data/currentProducts.js: improved comment docs
+- src/.eleventyignore
+- .netlify/functions/package.json
+
+### Changes to Netlify settings
+
+- git gateway settings: this was pointing at the wrong repo (Azellaz.com) or the wrong branch (master), so changes in the cms wrote to the old repo
+- functions dir
+
+### Changes to GitHub settings
+
+- new repository secret (not env secret) `SNIPCART_POST`
+
+### Changes to Snipcart settings
+
+- created new API key for product post requests
+
 ## [4.0.2] - 2021-12-01
 
 Fix Netlify build hook in lambda.
