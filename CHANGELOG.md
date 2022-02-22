@@ -11,6 +11,14 @@ This document started at v1.6.10 in the [Azellaz.com](https://github.com/brianze
 
 ## [Unreleased]
 
+## [4.2.0] - 2022-02-22
+
+Upgrade 11ty to ^1.0.0 (checked via eleventy-upgrade-help plugin) and run `npm audit fix` for recent security patches.
+
+### Updated
+
+- package\*.json
+
 ## [4.1.0] - 2021-12-13
 
 Added Snipcart API workflow for Snipcart fetching of product pages for creating or updating products.

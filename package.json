@@ -1,6 +1,6 @@
 {
   "name": "azellaz",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Source code for Azellaz.com. She's crafty, and she's just my type!",
   "scripts": {
     "clean": "rm -rf _site",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://www.azellaz.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "autoprefixer": "^10.3.6",
     "axios": "^0.22.0",
     "cssnano": "^5.0.8",
